@@ -1,7 +1,12 @@
+/*      -----Colors-----
+    --clr-primary: #562EFF;
+    --clr-secondary: #ffffff; 
+*/
+
 header {
-    background-color: #562EFF;
-    width: 100vw;
-    box-shadow: 0 0 10px #562EFF;
+    background-color: var(--clr-primary);
+    width: 100%;
+    box-shadow: 0 0 10px var(--clr-primary);
     overflow: hidden;
 }
 
@@ -36,21 +41,21 @@ nav li {
 
 nav li a {
     text-decoration: none;
-    color: white;
+    color: var(--clr-secondary);
     transition: .3s ease;
     padding: 10px;
 }
 
 nav>ul>li>a:hover {
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid var(--clr-secondary);
     padding-bottom: 20px;
 }
 
 .fa-user {
-    color: white;
+    color: var(--clr-secondary);
     vertical-align: middle;
     font-size: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--clr-secondary);
     border-radius: 50%;
     padding: 7px;
     transition: .3s ease;
