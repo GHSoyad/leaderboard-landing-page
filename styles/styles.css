@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('header.css');
 
 :root {
@@ -42,6 +42,11 @@ hr {
     margin: 40px 0 30px;
 }
 
+span.gray {
+    color: #6e6e6e;
+}
+
+/* Top section - Top instructors */
 .instructors {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,6 +64,7 @@ hr {
     margin-right: 16px;
 }
 
+/* Top section - Top blogs */
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -79,6 +85,45 @@ article img {
     color: var(--clr-primary);
 }
 
-.blog-info span {
-    color: #6e6e6e;
+/* Latest courses */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course {
+    padding: 10px;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.course .instructor {
+    color: #fc203a;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.course .course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course .duration {
+    color: #fc203a;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ffcdd5;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.course .fa-star,
+.course .fa-star-half-stroke {
+    color: #fdbd0d;
 }
