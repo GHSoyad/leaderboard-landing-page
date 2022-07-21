@@ -66,3 +66,58 @@ nav>ul>li>a:hover {
 .fa-user:hover {
     transform: scale(1.1);
 }
+
+/* Responsive for laptop */
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 80%;
+    }
+}
+
+/* Responsive for tablet */
+@media screen and (max-width: 992px) {
+    nav {
+        width: 80%;
+    }
+
+    nav .site-logo {
+        width: 30%;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* Responsive for landscape phones */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 90%;
+    }
+
+    nav .site-logo {
+        width: 40%;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* Responsive for portrait phones */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav .site-logo,
+    nav ul {
+        width: 90%;
+    }
+
+    nav .site-logo {
+        text-align: center;
+    }
+}
